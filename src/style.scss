@@ -1,14 +1,51 @@
-$header-height: 70px;
-$header-color: gray;
-$page-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+$gray: #cecece;
+$black: #201e1f;
+
+
+* {
+    user-select: none;
+}
 body {
     margin: 0;
-    background: $page-color;
 }
 
-header {
-    height: $header-height;
+.bg {
+    height: 100%;
     width: 100%;
-    background: $header-color;
+    background: $gray;
+    position: absolute;
+    &:after {
+        content: "";
+        height: 70vw;
+        width: 70vw;
+        left: 0;
+        top: 0;
+        position: absolute;
+        clip-path: polygon(0 0, 100% 0, 0 100%);
+        background: $black;
+    }
+}
+
+.resume {
+    height: 1000px;
+    width: 70vw;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    background: $gray;
+    box-shadow: -20px 0px 20px #111;
+    &:after {
+        content: "";
+        width: 40vw;
+        height: 40vw;
+        position: absolute;
+        right: 0;
+        top: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 100%);
+        background: $black;
+    }
 }
