@@ -1,0 +1,14 @@
+$header-height: 70px;
+$header-color: gray;
+$page-color: black;
+
+body {
+    margin: 0;
+    background: $page-color;
+}
+
+header {
+    height: $header-height;
+    width: 100%;
+    background: $header-color;
+}
