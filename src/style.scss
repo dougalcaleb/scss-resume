@@ -4,6 +4,7 @@ $gray: #cecece;
 $black: #201e1f;
 $border: #9a9a9a;
 
+// auto compile w/o plugin: sass --watch <watch files from>:<save files to>
 
 * {
     user-select: none;
@@ -211,13 +212,14 @@ h5{
 .sec-r {
     padding-top: 10px;
     padding-left: 10px;
-    flex-grow: 5;
+    flex-grow: 7;
     position: relative;
     .r-sec {
         border-bottom: 1px solid $border;
         padding-bottom: 15px;
-        p {
-            width: 70%;
+        position: relative;
+        .bio {
+            width: 35vw;
             text-align: justify;
         }
     }
@@ -227,13 +229,15 @@ h5{
     // background: green;
     display: flex;
     justify-content: space-between;
-    margin: auto;
-    width: 90%;
-    display: none;
+    // margin: auto;
+    width: 35vw;
+    flex-wrap: wrap;
+    // display: none;
     .social {
         font-family: "Roboto";
         position: relative;
         padding-left: 30px;
+        padding-top: 10px;
         svg {
             position: absolute;
             top: 0;
@@ -245,10 +249,10 @@ h5{
 }
 
 .exp-wrap {
-    background: green;
+    // background: green;
     display: flex;
     flex-direction: column;
-    display: none;
+    // display: none;
     .exp{
         // background: orange;
         display: flex;
@@ -257,7 +261,7 @@ h5{
             font-family: "Roboto";
         }
         .exp-work {
-            background: gray;
+            // background: gray;
             width: 30vw;
             padding-left: 40px;
             p {

@@ -194,29 +194,30 @@ h5:after {
 .sec-r {
   padding-top: 10px;
   padding-left: 10px;
-  flex-grow: 5;
+  flex-grow: 7;
   position: relative;
 }
 .sec-r .r-sec {
   border-bottom: 1px solid #9a9a9a;
   padding-bottom: 15px;
+  position: relative;
 }
-.sec-r .r-sec p {
-  width: 70%;
+.sec-r .r-sec .bio {
+  width: 35vw;
   text-align: justify;
 }
 
 .social-wrap {
   display: flex;
   justify-content: space-between;
-  margin: auto;
-  width: 90%;
-  display: none;
+  width: 35vw;
+  flex-wrap: wrap;
 }
 .social-wrap .social {
   font-family: "Roboto";
   position: relative;
   padding-left: 30px;
+  padding-top: 10px;
 }
 .social-wrap .social svg {
   position: absolute;
@@ -227,10 +228,8 @@ h5:after {
 }
 
 .exp-wrap {
-  background: green;
   display: flex;
   flex-direction: column;
-  display: none;
 }
 .exp-wrap .exp {
   display: flex;
@@ -239,7 +238,6 @@ h5:after {
   font-family: "Roboto";
 }
 .exp-wrap .exp .exp-work {
-  background: gray;
   width: 30vw;
   padding-left: 40px;
 }
