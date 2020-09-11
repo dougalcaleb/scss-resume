@@ -38,8 +38,9 @@ body {
 .resume {
     height: 1000px;
     width: 70vw;
+    min-width: 500px;
     @extend %center-x;
-    top: 100px;
+    margin-top: 100px;
     background: $lgray;
     box-shadow: -60px 0px 120px #2b2b2b;
     padding: 50px;
@@ -170,6 +171,7 @@ h5{
     padding-left: 10px;
     flex-grow: 7;
     position: relative;
+    min-width: 200px;
     .r-sec {
         border-bottom: 1px solid $border;
         padding-bottom: 15px;
