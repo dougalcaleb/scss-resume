@@ -1,0 +1,11 @@
+{
+  "name": "sass",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ../src:../css"
+  },
+  "author": "",
+  "license": "ISC"
+}
