@@ -38,10 +38,7 @@ body {
 .resume {
     height: 1000px;
     width: 70vw;
-    margin: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
+    @extend %center-x;
     top: 100px;
     background: $lgray;
     box-shadow: -60px 0px 120px #2b2b2b;
@@ -72,8 +69,6 @@ body {
 }
 
 header {
-    // height: 200px;
-    // background: orange;
     border-bottom: 1px solid $border;
     h1 {
         font-family: "Poppins";
@@ -98,7 +93,6 @@ header {
     height: 80%;
     bottom: 0;
     position: absolute;
-    // background: purple;
     display: flex;
     align-items: stretch;
 }
@@ -107,7 +101,6 @@ header {
     border-right: 1px solid $border;
     padding-top: 10px;
     position: relative;
-    // background: orange;
     flex-grow: 1;
     h6 {
         font-family: "Open Sans";
@@ -123,7 +116,6 @@ header {
     .progress {
         height: 10px;
         width: 80%;
-        // background: green;
         border: 1px solid $border;
         box-sizing: border-box;
         position: relative;
@@ -190,18 +182,14 @@ h5{
 }
 
 .social-wrap {
-    // background: green;
     display: flex;
     justify-content: space-between;
-    // margin: auto;
     width: 35vw;
     flex-wrap: wrap;
-    // display: none;
     .social {
         font-family: "Roboto";
         position: relative;
         padding-left: 30px;
-        // padding-top: 10px;
         svg {
             position: absolute;
             top: 0;
@@ -213,19 +201,14 @@ h5{
 }
 
 .exp-wrap {
-    // background: green;
     display: flex;
     flex-direction: column;
-    // display: none;
     .exp{
-        // background: orange;
         display: flex;
         .exp-time {
-            // background: white;
             font-family: "Roboto";
         }
         .exp-work {
-            // background: gray;
             width: 30vw;
             padding-left: 40px;
             p {

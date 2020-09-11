@@ -15,4 +15,23 @@ $border: #9a9a9a;
     }
 }
 
-// auto compile w/o plugin: sass --watch <watch files from>:<save files to>
+%center {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+%center-x {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+%center-y {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
