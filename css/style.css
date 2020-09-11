@@ -8,7 +8,7 @@ body {
 }
 
 .bg {
-  height: 3000px;
+  height: 2500px;
   width: 100%;
   background: #cecece;
   position: absolute;
@@ -42,8 +42,8 @@ body {
   left: 0;
   right: 0;
   top: 100px;
-  background: #cecece;
-  box-shadow: -20px 0px 40px #333;
+  background: #ececec;
+  box-shadow: -60px 0px 120px #2b2b2b;
   padding: 50px;
   box-sizing: border-box;
 }
@@ -55,7 +55,7 @@ body {
   right: 0;
   top: 0;
   clip-path: polygon(0 0, 100% 0, 100% 100%);
-  background: #cecece;
+  background: #ececec;
   z-index: 10;
 }
 .resume:after {
@@ -217,7 +217,6 @@ h5:after {
   font-family: "Roboto";
   position: relative;
   padding-left: 30px;
-  padding-top: 10px;
 }
 .social-wrap .social svg {
   position: absolute;

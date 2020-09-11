@@ -1,0 +1,18 @@
+$gray: #cecece;
+$lgray: #ececec;
+$black: #201e1f;
+$border: #9a9a9a;
+
+@mixin progBar($wid) {
+    &:after {
+        content: "";
+        height: 8px;
+        width: $wid;
+        background: $border;
+        left: 0;
+        top: 0;
+        position: absolute;
+    }
+}
+
+// auto compile w/o plugin: sass --watch <watch files from>:<save files to>

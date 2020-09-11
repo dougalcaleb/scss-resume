@@ -1,10 +1,5 @@
+@import "ext";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Poppins:wght@400;500;700&family=Roboto&display=swap');
-
-$gray: #cecece;
-$black: #201e1f;
-$border: #9a9a9a;
-
-// auto compile w/o plugin: sass --watch <watch files from>:<save files to>
 
 * {
     user-select: none;
@@ -14,7 +9,7 @@ body {
 }
 
 .bg {
-    height: 3000px;
+    height: 2500px;
     width: 100%;
     background: $gray;
     position: absolute;
@@ -48,8 +43,8 @@ body {
     left: 0;
     right: 0;
     top: 100px;
-    background: $gray;
-    box-shadow: -20px 0px 40px #333;
+    background: $lgray;
+    box-shadow: -60px 0px 120px #2b2b2b;
     padding: 50px;
     box-sizing: border-box;
     &:before {
@@ -60,7 +55,7 @@ body {
         right: 0;
         top: 0;
         clip-path: polygon(0 0, 100% 0, 100% 100%);
-        background: $gray;
+        background: $lgray;
         z-index: 10;
     }
     &:after {
@@ -163,49 +158,18 @@ h5{
 }
 
 .prog-95 {
-    &:after {
-        content: "";
-        height: 8px;
-        width: 95%;
-        background: $border;
-        left: 0;
-        top: 0;
-        position: absolute;
-    }
+    @include progBar(95%);
 }
 
 .prog-80 {
-    &:after {
-        content: "";
-        height: 8px;
-        width: 80%;
-        background: $border;
-        left: 0;
-        top: 0;
-        position: absolute;
-    }
+    @include progBar(80%);
 }
 .prog-75 {
-    &:after {
-        content: "";
-        height: 8px;
-        width: 75%;
-        background: $border;
-        left: 0;
-        top: 0;
-        position: absolute;
-    }
+    @include progBar(75%);
+
 }
 .prog-65 {
-    &:after {
-        content: "";
-        height: 8px;
-        width: 65%;
-        background: $border;
-        left: 0;
-        top: 0;
-        position: absolute;
-    }
+    @include progBar(65%);
 }
 
 
@@ -237,7 +201,7 @@ h5{
         font-family: "Roboto";
         position: relative;
         padding-left: 30px;
-        padding-top: 10px;
+        // padding-top: 10px;
         svg {
             position: absolute;
             top: 0;
